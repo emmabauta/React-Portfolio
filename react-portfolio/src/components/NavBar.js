@@ -17,29 +17,29 @@ function NavBar() {
     window.addEventListener('resize', showButton);
     return (
         <>
-            <header class="header banner" id="top">
-                <nav class="nav">
-                    <ul class="nav__items">
-                        <li class="nav__item">
+            <header className="header banner" id="top">
+                <nav className="nav">
+                    <ul className="nav__items">
+                        <li className="nav__item">
                             <Link to='/work' className='nav-links'>
                                 Work
                             </Link>
                         </li>
-                        <li class="nav__item">
+                        <li className="nav__item">
                             <Link to='/about' className='nav-links'>
                                 About
                             </Link>
                         </li>
-                        <li class="nav__item">
+                        <li className="nav__item">
                             <Link to='/' className='nav-links'>
                                 Home
                             </Link>
                         </li>
                     </ul>
                 </nav>
-                <div class="header__text-box row">
-                    <div class="header__text">
-                        <h1 class="heading-primary">
+                <div className="header__text-box row">
+                    <div className="header__text">
+                        <h1 className="heading-primary">
                             <span>Emma Dill</span>
                         </h1>
                         <p>Web Development | Design | Data</p>
