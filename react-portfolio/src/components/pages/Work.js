@@ -1,16 +1,9 @@
 import React from 'react';
 import CardList from '../CardList';
-import Footer from '../Footer';
-import NavBar from '../NavBar';
+
 
 function Work() {
-  return (
-    <>
-    <NavBar/>
-      <CardList/>
-      <Footer />
-    </>
-  );
+    return <h1 className='work'>Work</h1>;
 }
 
 export default Work;

@@ -4,21 +4,20 @@ import './CardList.css';
 function Card(props) {
     return (
         <>
-            <div className="work__box">
-                <div className="work__text">
-                    <h3>{props.title}</h3>
-                    <p>{props.description}</p>
-                    <ul className="work__list">
-                    </ul>
-                    <Link className='work__links' to={props.path}></Link>
-                    <div className="work__image-box">
+            <li className='cards__item'>
+                <Link className='cards__item__link' to={props.path}>
+                    <figure className='cards__item__pic-wrap' data-category={props.label}>
                         <img
-                            className='work__img'
-                            alt='Project'
-                            src={props.src}></img>
+                            className='cards__item__img'
+                            alt='Travel Image'
+                            src={props.src}
+                        />
+                    </figure>
+                    <div className='cards__item__info'>
+                        <h5 className='cards__item__text'>{props.text}</h5>
                     </div>
-                </div>
-            </div>
+                </Link>
+            </li>
         </>
     )
 }
