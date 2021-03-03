@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './WorkCard';
+import './CardList.css';
 
 function CardList(){
     return (
